@@ -51,15 +51,14 @@
 // Colors
 $black: #000000;
 $blue: #89b5d4;
+$blue: #89b5d4;
+$green: #a0cf9f;
+$pink: #d596c0;
 $red: #ea5e79;
+$turquoise: #5cbeb8;
+$violet: #7e77af;
 $white: #ffffff;
 $yellow: #ffd24d;
-
-// $pink: #D596C0;
-// $violet: #7E77AF;
-// $blue: #89B5D4;
-// $turquoise: #5CBEB8;
-// $green: #A0CF9F;
 
 // Spacing
 $pad: clamp(12px, 2.5vw, 30px);
@@ -76,7 +75,7 @@ $sbold: 500;
 $bold: 600;
 $extrabold: 700;
 
-// Font-sizes
+// Font-sizes (¡Corregir vw, no funcionan correctamente los vw bajos!)
 $size-h1: clamp(8rem, 4vw, 9.375rem);
 $size-h2: clamp(3.2rem, 3vw, 5rem);
 $size-h3: clamp(2.6rem, 2.7vw, 4.0625rem);
