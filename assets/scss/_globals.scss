@@ -1,0 +1,87 @@
+// --------------------------------------------------------------
+// text styling
+// --------------------------------------------------------------
+
+@mixin underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: initial;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.12em;
+}
+.underline { @include underline; }
+
+
+@mixin richtext {
+    p, ul, ol {
+        padding-bottom: 1em;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 1em;
+    }
+    ol {
+        list-style-type: decimal;
+        padding-left: 1em;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        padding-bottom: 0.5em;
+        padding-top: 1em;
+    }
+
+    a {
+        @include underline;
+    }
+}
+
+
+// --------------------------------------------------------------
+// backgrounds
+// --------------------------------------------------------------
+
+@mixin bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-cover { @include bg-cover; }
+
+@mixin bg-contain{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bg-contain { @include bg-contain; }
+
+
+// --------------------------------------------------------------
+// spacing
+// --------------------------------------------------------------
+
+@mixin pt-05 { padding-top: .5em; }
+.pt-05 { @include pt-05; }
+@mixin pt-1 { padding-top: 1em; }
+.pt-1 { @include pt-1; }
+@mixin pt-2 { padding-top: 2em; }
+.pt-2 { @include pt-2; }
+@mixin pt-3 { padding-top: 3em; }
+.pt-3 { @include pt-3; }
+@mixin pt-4 { padding-top: 4em; }
+.pt-4 { @include pt-4; }
+@mixin pt-5 { padding-top: 5em; }
+.pt-5 { @include pt-5; }
+
+@mixin pb-05 { padding-bottom: .5em; }
+.pb-05 { @include pb-05; }
+@mixin pb-1 { padding-bottom: 1em; }
+.pb-1 { @include pb-1; }
+@mixin pb-2 { padding-bottom: 2em; }
+.pb-2 { @include pb-2; }
+@mixin pb-3 { padding-bottom: 3em; }
+.pb-3 { @include pb-3; }
+@mixin pb-4 { padding-bottom: 4em; }
+.pb-4 { @include pb-4; }
+@mixin pb-5 { padding-bottom: 5em; }
+.pb-5 { @include pb-5; }

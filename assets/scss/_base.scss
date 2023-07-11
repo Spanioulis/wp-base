@@ -1,0 +1,60 @@
+/****************************************************************
+/ Base contains TAGS general styling
+/****************************************************************/
+
+html {
+   // font-size: 62.5%;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: $fonts;
+
+   // font-size: 1.4rem;
+   // line-height: 1.25;
+
+   // font rendering an aliasing
+   text-rendering: geometricPrecision;
+   font-smooth: antialiased;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+
+   // overscroll
+   overscroll-behavior: none;
+
+   // aparition
+   transition: opacity 0.2s;
+   &.hidden {
+      opacity: 0;
+   }
+
+   // smooth scroll (only touch screens)
+   // @media #{$media-touch} {
+   //     scroll-behavior: smooth;
+   // }
+   @include m--touchscreen {
+      scroll-behavior: smooth;
+   }
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   cursor: pointer;
+}
+
+p a {
+   text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   // text-transform: uppercase;
+   // font-family: $falt;
+}

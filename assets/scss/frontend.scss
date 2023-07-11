@@ -1,0 +1,20 @@
+// Basics ----------------
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'globals';
+@import 'base';
+
+// Sections ----------------
+@import 'sections/header';
+@import 'sections/menu';
+@import 'sections/footer';
+
+// Components ----------------
+@import 'components/buttons';
+@import 'components/forms';
+
+// Templates ----------------
+@import 'templates/home';
+@import 'templates/template-entradas';
+@import 'templates/template-post-type';
