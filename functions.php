@@ -298,4 +298,3 @@ function cambiar_nombre_entradas_menu() {
 }
 add_action( 'admin_menu', 'cambiar_nombre_entradas_menu' );
 ?>
-
