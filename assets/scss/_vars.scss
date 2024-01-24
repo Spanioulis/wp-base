@@ -1,51 +1,43 @@
 // Media queries
-// $media-desktop:   "only screen and (max-width : 1400px )";
-// $media-laptop:    "only screen and (max-width : 1200px )";
-// $media-tablet:    "only screen and (max-width : 990px  )";
-// $media-mobile:    "only screen and (max-width : 767px  )";
-// $media-sm:        "only screen and (max-width : 576px  )";
-// $media-xs:        "only screen and (max-width : 380px  )";
-// $media-touch:     "(hover: none) and (pointer: coarse)";
-// $media-not-touch: "(hover: hover) and (pointer: fine)";
 @mixin m--desktop {
-   @media only screen and (max-width: 1400px) {
-      @content;
-   }
+    @media only screen and (max-width: 1400px) {
+        @content;
+    }
 }
 @mixin m--laptop {
-   @media only screen and (max-width: 1200px) {
-      @content;
-   }
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
 }
 @mixin m--tablet {
-   @media only screen and (max-width: 990px) {
-      @content;
-   }
+    @media only screen and (max-width: 990px) {
+        @content;
+    }
 }
 @mixin m--mobile {
-   @media only screen and (max-width: 767px) {
-      @content;
-   }
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
 }
 @mixin m--sm {
-   @media only screen and (max-width: 576px) {
-      @content;
-   }
+    @media only screen and (max-width: 576px) {
+        @content;
+    }
 }
 @mixin m--xs {
-   @media only screen and (max-width: 380px) {
-      @content;
-   }
+    @media only screen and (max-width: 380px) {
+        @content;
+    }
 }
 @mixin m--touchscreen {
-   @media (hover: none) and (pointer: coarse) {
-      @content;
-   }
+    @media (hover: none) and (pointer: coarse) {
+        @content;
+    }
 }
 @mixin m--not-touchscreen {
-   @media (hover: hover) and (pointer: fine) {
-      @content;
-   }
+    @media (hover: hover) and (pointer: fine) {
+        @content;
+    }
 }
 
 // Colors
@@ -75,7 +67,7 @@ $sbold: 500;
 $bold: 600;
 $extrabold: 700;
 
-// Font-sizes (¡Corregir vw, no funcionan correctamente los vw bajos!)
+// Font-sizes
 $size-h1: clamp(8rem, 4vw, 9.375rem);
 $size-h2: clamp(3.2rem, 3vw, 5rem);
 $size-h3: clamp(2.6rem, 2.7vw, 4.0625rem);
