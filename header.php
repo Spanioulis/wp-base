@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description of the website">
+    <meta name="author" content="Nombre del autor">
 
     <title><?php wp_title('·'); ?></title>
 
@@ -22,25 +24,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <script>
-        document.getElementsByTagName('header')[0].classList.add('js-fcp');
-        document.getElementsByTagName('main')[0].classList.add('js-scp');
-    </script>
+    <header id="header" class="header js-1cp" role="banner">
+        <a class="header__logo" id="logo" href="<?= get_home_url( ); ?>">
 
-<?php 
-    $home_id = get_option( 'page_on_front' );
-    $thumbnail_url = get_the_post_thumbnail_url( $home_id );
-?>
+        </a>
 
-    <header id="header" class="header" role="banner">
         <nav class="header__nav" id="nav">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/..."></a>
-      
-          <div>
-              <a href="#">Nav 1</a>
-              <a href="#">Nav 2</a>
-          </div>  
+            <?php wp_nav_menu( array('theme_location' => 'main-nav')); ?>
         </nav>
     </header>
-
 
