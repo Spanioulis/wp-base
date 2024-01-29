@@ -297,4 +297,22 @@ function cambiar_nombre_entradas_menu() {
     }
 }
 add_action( 'admin_menu', 'cambiar_nombre_entradas_menu' );
+
+/* Mejora performance */
+// Desactiva 'wp-block-library'
+function remove_block_library_styles() {
+    wp_dequeue_style('wp-block-library'); 
+}
+add_action('wp_enqueue_scripts', 'remove_block_library_styles');
+
+// Desactivar jquery (si no se usa)
+function load_jquery_from_google_cdn() {
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), null, true);
+        wp_enqueue_script('jquery');
+    }
+}
+add_action('wp_enqueue_scripts', 'load_jquery_from_google_cdn');
+
 ?>
